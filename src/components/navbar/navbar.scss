@@ -1,0 +1,17 @@
+@import '../../sass/main.scss';
+
+.navbar {
+    display: flex;
+    gap:45px;
+    align-items: center;
+    @include text-style;
+    font-weight: 500;
+    font-size: 24px;
+    color: $color-primary;
+    li {
+        &:first-of-type{
+            text-decoration: underline;
+        }
+        list-style: none;
+    }
+}

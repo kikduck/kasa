@@ -1,0 +1,12 @@
+@import '../../sass/main.scss';
+
+.banner{
+    img {
+        position: absolute;
+        border-radius: 30px;
+    }
+    h2 {
+        @include text-style;
+    }
+    
+}
