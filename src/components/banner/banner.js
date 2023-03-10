@@ -1,10 +1,16 @@
 import './banner.scss'
-import HomeBanner from '../../assets/home_cover.png'
 export default function Banner() {
+    const pathname = window.location.pathname;
+    const lastSlashIndex = pathname.lastIndexOf('/');
+    const urlPart = pathname.substring(lastSlashIndex);
+    let className = 'banner_home'
+    if (urlPart === '/about') {
+        className = 'banner_about'
+    }
+
     return (
-        <div className='banner'>
-            <img src={HomeBanner} alt="Kasa, home cover"></img>
-            <h2>Chez vous, partout et ailleurs</h2>
-        </div>
+        <section className={className}>
+            <p>Chez vous, partout et ailleurs</p>
+        </section>
     )
 }

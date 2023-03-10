@@ -1,12 +1,37 @@
 @import '../../sass/main.scss';
 
-.banner{
-    img {
-        position: absolute;
-        border-radius: 30px;
+
+.banner_home{
+    border: 1px solid red;
+    margin-left: $margin;
+    margin-right: $margin;
+    background: linear-gradient(rgba(137, 137, 137, 0.359), rgba(220, 220, 220, 0)),
+    url('../../assets/home_cover.png');
+    background-position: center;
+    background-size: cover;
+    overflow : hidden;
+    border-radius: 1em;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (max-width: 700px){
+        height: 100px;
+        justify-content: flex-start;
+
     }
-    h2 {
+    
+
+    p {
         @include text-style;
+        color: white;
+        border: 1px solid blue;
+        font-size: 40px;
+        @media screen and (max-width: 700px){
+            font-size: 20px
+    
+        }
+
     }
     
 }

@@ -3,9 +3,14 @@
 .header{
     display: flex;
     justify-content: space-between;
-    margin-left: 50px;
-    margin-right: 50px;
+    align-items: center;
+    margin-left: $margin;
+    margin-right: $margin;
+    border:  1px solid red;
     img {
-        width: 200px;
+        height: 100%;
+        width: 100%;
+        border: 1px solid blue;
+
     }
 }
