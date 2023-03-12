@@ -1,0 +1,18 @@
+@import '../../sass/main.scss';
+
+.catalog {
+    border: 1px solid red;
+    display: flex;
+    margin-left: $margin;
+    margin-right: $margin;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 50px;
+    background-color: $background-color;
+    border-radius: 25px;
+    margin-top: 30px;
+}
