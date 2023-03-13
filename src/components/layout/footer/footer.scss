@@ -1,8 +1,6 @@
 @import '../../../sass/main.scss';
 
 footer {
-    @include margin;
-
     height: 209px;
     background-color: black;
     display: flex;
@@ -12,7 +10,6 @@ footer {
     p {
         @include text-style;
         color: white;
-
         margin-top: 40px;
 
     }

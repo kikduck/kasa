@@ -19,7 +19,7 @@ export default function AppRoutes() {
             element: <About />
         },
         {
-            path: "/housing",
+            path: "/housing/:id",
             element: <Housing />
         },
     ]);
