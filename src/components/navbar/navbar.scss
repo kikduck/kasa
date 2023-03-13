@@ -11,7 +11,7 @@
     align-items: center;
     @include text-style;
     font-weight: 500;
-    border: 1px solid green;
+    //border: 1px solid green;
     font-size: clamp(12px, 2.5vw, 24px);
     color: $color-primary;
     flex-wrap: nowrap;

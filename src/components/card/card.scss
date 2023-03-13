@@ -6,7 +6,9 @@
     height: 340px;
     width: 30%;
     border-radius: 10px;
-    border: 1px solid blue;
+    overflow: hidden;
+    text-decoration: none;
+    //border: 1px solid blue;
     cursor: pointer;
     @media screen and (max-width: 1256px){
         width: 47%;   
@@ -40,12 +42,13 @@
         white-space: wrap;
         color: white;
         @include text-style;
-        border: 1px solid green;
+        //border: 1px solid green;
         position: relative;
         bottom: 25%;
         left: 5%;
         width: 80%;
         font-weight: 500;
         font-size: clamp(12px, 3vw, 18px);
+        
     }
 }

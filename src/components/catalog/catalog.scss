@@ -1,10 +1,9 @@
 @import '../../sass/main.scss';
 
 .catalog {
-    border: 1px solid red;
+    //border: 1px solid red;
     display: flex;
-    margin-left: $margin;
-    margin-right: $margin;
+    @include margin;
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 40px;
@@ -15,4 +14,7 @@
     background-color: $background-color;
     border-radius: 25px;
     margin-top: 30px;
+    @media screen and (max-width: 500px){
+        margin-top: 30px;
+    }
 }
