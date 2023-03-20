@@ -1,0 +1,49 @@
+@import '../../sass/main.scss';
+
+.collapse-container {
+    padding-top: 20px;
+    margin-bottom: 20px;
+    @include text-style;
+    .collapse-header {
+        height: 40px;
+        background-color: $color-primary;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        cursor: pointer;
+        .arrowUp {
+            transition: all 0.2s ease-in-out;
+        }
+        .arrowDown {
+            rotate: 180deg;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+    .visible_content, .hidden_content {
+        background-color: $background-color;
+        color: $color-primary;
+        border-radius: 5px;
+        padding: 20px;
+    }
+    
+    .visible_content {
+        animation: anim_content 0.3s;
+    }
+}
+
+@keyframes anim_content{
+    0% {
+        visibility: hidden;
+        height: 0;
+        opacity: 0;
+    }
+    100% {
+        visibility: visible;
+        height: auto;
+        opacity: 1;
+    }
+}

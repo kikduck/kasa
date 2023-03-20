@@ -1,1 +1,28 @@
 @import '../../sass/main.scss';
+
+.error {
+    @include text-style;
+    color: $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    h1 {
+        font-size: clamp(5em, 16vw, 14em);
+        margin-top: 50px;
+    }
+    h2 {
+        margin-top: 20px;
+        font-size: clamp(14px, 3vw, 30px);
+        width: 80%;
+        white-space: wrap;
+    }
+    a {
+        margin-top: 100px;
+        font-size: clamp(12px, 2.5vw, 24px);
+    }
+    a:visited {
+        color: $color-primary;
+    }
+}

@@ -1,15 +1,9 @@
 @import '../../sass/main.scss';
 
-
-.banner_home{
+.banner {
     //border: 1px solid red;
     @include margin-head;
     margin-top: 10px;
-    background: linear-gradient(180deg, rgba(105, 105, 105, 0.359), rgba(235, 235, 235, 0)),
-    url('../../assets/home_cover.png');
-    background-position: center;
-    background-size: cover;
-    overflow : hidden;
     border-radius: 1em;
     height: 200px;
     display: flex;
@@ -20,7 +14,7 @@
         justify-content: flex-start;
 
     }
-    
+
 
     p {
         @include text-style;
@@ -30,9 +24,31 @@
         @media screen and (max-width: 700px){
             font-size: 20px;
             padding-left: 5%;
-    
+
         }
 
     }
-    
+}
+
+.banner_about {
+    background: linear-gradient(180deg, rgba(105, 105, 105, 0.359), rgba(235, 235, 235, 0)),
+    url('../../assets/about_cover.png');
+    background-position: center;
+    background-size: cover;
+    overflow : hidden;
+    @media screen and (max-width: 500px){
+        height: 250px;
+    }
+}
+
+.banner_home{
+    background: linear-gradient(180deg, rgba(105, 105, 105, 0.359), rgba(235, 235, 235, 0)),
+    url('../../assets/home_cover.png');
+    background-position: center;
+    background-size: cover;
+    overflow : hidden;
+}
+
+.text_about {
+    display: none;
 }

@@ -1,1 +1,11 @@
 @import '../../sass/main.scss';
+
+.section_collapse {
+    @include margin-head;
+    margin-top: 10px;
+    margin-bottom: 50px;
+    @media screen and (min-width: 500px){
+        margin-left: 15%; 
+        margin-right: 15%;
+    }
+}
