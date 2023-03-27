@@ -1,0 +1,22 @@
+@import '../../sass/main.scss';
+
+.tag {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 10px;
+    li {
+        font-size: medium;
+        font-size: clamp(10px, 2.1vw, 17px);
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: clamp(50px, 18vw, 125px);
+        min-height: 25px;
+        padding: 0px 8px;
+        background-color: $color-primary;
+        border-radius: 10px;
+        color: white;
+    }
+}

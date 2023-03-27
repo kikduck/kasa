@@ -13,7 +13,7 @@ export default function About() {
         dataAbout.push(oneDataAbout);
     }
     const collapse = dataAbout.map(oneDataAbout => (
-        <Collapse title={oneDataAbout.title} content={oneDataAbout.content} />
+        <Collapse key={oneDataAbout.id} title={oneDataAbout.title} content={oneDataAbout.content} />
     ));
     return (
         <div className='about'>

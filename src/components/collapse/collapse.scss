@@ -4,6 +4,8 @@
     padding-top: 20px;
     margin-bottom: 20px;
     @include text-style;
+    font-size: clamp(13px, 2vw, 20px);
+    font-weight: normal;
     .collapse-header {
         height: 40px;
         background-color: $color-primary;

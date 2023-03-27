@@ -11,7 +11,7 @@ export default function Catalog() {
         locations.push(location);
     }
     const cards = locations.map(location => (
-        <Card id={location.id} title={location.title} cover={location.cover} />
+        <Card key={location.id} id={location.id} title={location.title} cover={location.cover} />
     ));
     return (
         <section className='catalog'>

@@ -1,0 +1,22 @@
+@import '../../sass/main.scss';
+
+.host {
+    display: flex;
+    align-items: center;
+    color: $color-primary;
+    font-size: clamp(13px, 2vw, 20px);
+    p {
+        width: 80%;
+        margin-right: 20px;
+        white-space: wrap;
+    }
+    img {
+        border-radius: 50%;
+        height: 64px;
+        width: 64px;
+        @media screen and (max-width: 700px){
+            height: 40px;
+            width: 40px;
+        }
+    }
+}
