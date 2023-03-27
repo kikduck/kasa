@@ -6,12 +6,13 @@ import Slideshow from '../../components/slideshow/slideshow'
 import Collapse from '../../components/collapse/collapse'
 import Host from '../../components/host/host'
 import Rating from '../../components/rating/rating'
+//import NotFound from '../notfound/notfound'
 import { useNavigate } from 'react-router-dom';
 import { useEffect, useState } from 'react'
 import data from '../../data/housing.json';
 // , cover, pictures, description, host, rating, location, equipments, 
 export default function Housing() {
-    let [title, sideshow, host, rating, location, tags, collapses] = useState();
+    let title, sideshow, host, rating, location, tags, collapses
     const navigate = useNavigate();
     const url = window.location.href;
     const lastSlashIndex = url.lastIndexOf('/');
@@ -29,17 +30,19 @@ export default function Housing() {
             // Si l'ID n'est pas valide, rediriger vers une page d'erreur
             navigate('/notfound');
         }
-    }, [id, navigate, foundLogement]);
+    }, [navigate, foundLogement]);
 
     for (let i = 0; i < locations.length; i++) {
         if (locations[i].id === id) {
             title = <h1>{locations[i].title}</h1>
             location = <p>{locations[i].location}</p>
 
-            sideshow =
+            sideshow = (
                 <div className='housing_slideshow'>
                     <Slideshow pictures={locations[i].pictures} />
                 </div>
+            );
+
 
             tags =
                 <div className='housing_tags'>
