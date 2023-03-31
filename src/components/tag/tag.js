@@ -1,5 +1,4 @@
 import './tag.scss'
-import { useState } from 'react'
 
 export default function Tag({ tags }) {
     let listItems

@@ -8,9 +8,8 @@ import Host from '../../components/host/host'
 import Rating from '../../components/rating/rating'
 //import NotFound from '../notfound/notfound'
 import { useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import data from '../../data/housing.json';
-// , cover, pictures, description, host, rating, location, equipments, 
 export default function Housing() {
     let title, sideshow, host, rating, location, tags, collapses
     const navigate = useNavigate();
