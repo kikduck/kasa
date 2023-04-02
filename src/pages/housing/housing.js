@@ -6,7 +6,6 @@ import Slideshow from '../../components/slideshow/slideshow'
 import Collapse from '../../components/collapse/collapse'
 import Host from '../../components/host/host'
 import Rating from '../../components/rating/rating'
-//import NotFound from '../notfound/notfound'
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react'
 import data from '../../data/housing.json';
@@ -36,12 +35,10 @@ export default function Housing() {
             title = <h1>{locations[i].title}</h1>
             location = <p>{locations[i].location}</p>
 
-            sideshow = (
+            sideshow =
                 <div className='housing_slideshow'>
                     <Slideshow pictures={locations[i].pictures} />
                 </div>
-            );
-
 
             tags =
                 <div className='housing_tags'>
