@@ -15,7 +15,9 @@
     border-radius: 25px;
     margin-top: 30px;
     @media screen and (max-width: 500px){
-        margin-top: 30px;
+        padding-top: 0px;
+        margin-top: 25px;
+        gap: 25px;
         background-color: white;
     }
 }

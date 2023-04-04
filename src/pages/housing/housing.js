@@ -30,38 +30,35 @@ export default function Housing() {
         }
     }, [navigate, foundLogement]);
 
-    for (let i = 0; i < locations.length; i++) {
-        if (locations[i].id === id) {
-            title = <h1>{locations[i].title}</h1>
-            location = <p>{locations[i].location}</p>
+    if (foundLogement) {
+        title = <h1>{foundLogement.title}</h1>
+        location = <p>{foundLogement.location}</p>
 
-            sideshow =
-                <div className='housing_slideshow'>
-                    <Slideshow pictures={locations[i].pictures} />
-                </div>
+        sideshow =
+            <div className='housing_slideshow'>
+                <Slideshow pictures={foundLogement.pictures} />
+            </div>
 
-            tags =
-                <div className='housing_tags'>
-                    <Tag tags={locations[i].tags} />
-                </div>
+        tags =
+            <div className='housing_tags'>
+                <Tag tags={foundLogement.tags} />
+            </div>
 
-            host =
-                <div className='host_name'>
-                    <Host host={locations[i].host} />
-                </div>
+        host =
+            <div className='host_name'>
+                <Host host={foundLogement.host} />
+            </div>
 
-            rating =
-                <div className='host_rating'>
-                    <Rating rating={locations[i].rating} />
-                </div>
+        rating =
+            <div className='host_rating'>
+                <Rating rating={foundLogement.rating} />
+            </div>
 
-            collapses =
-                <div className='housing_collapse'>
-                    <Collapse title="Description" content={locations[i].description} />
-                    <Collapse title="Equipements" content={locations[i].equipments} />
-                </div>;
-        }
-
+        collapses =
+            <div className='housing_collapse'>
+                <Collapse title="Description" content={foundLogement.description} />
+                <Collapse title="Equipements" content={foundLogement.equipments} />
+            </div>;
     }
 
     return (
